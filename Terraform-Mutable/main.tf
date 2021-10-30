@@ -5,4 +5,7 @@ module "shipping" {
     od_ins = var.od_ins
     instance_type = var.instance_type
     component   = "shipping"
+    port        = 8080
+    is_internal = "true"
+    priority    = 500
 }
