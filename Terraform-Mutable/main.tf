@@ -8,4 +8,5 @@ module "shipping" {
     port        = 8080
     is_internal = "true"
     priority    = 500
+    APP_VERSION = var.APP_VERSION
 }
