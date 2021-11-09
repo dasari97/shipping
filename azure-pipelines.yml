@@ -1,0 +1,23 @@
+trigger:
+  branches:
+    include: [ "*" ]
+  #tags:
+  #  include: [ "*" ]
+
+pool:
+  name: WS
+
+resources:
+  repositories:
+  - repository: azureCI
+    type: git
+    name: azureCI
+    
+variables:
+  COMPONENT: shipping
+    
+stages: 
+- template: "codecheck.yml@azureCI"
+- template: "codeTest.yml@azureCI"
+- template: "java-az.yml@azureCI"
+  
