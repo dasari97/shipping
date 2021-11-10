@@ -8,7 +8,7 @@ backend "s3" {
     region = "us-east-1"
 }
 
-module "shipping" {
+module "ami" {
     source = "git::https://dasarisaikrishna97@dev.azure.com/dasarisaikrishna97/Roboshop/_git/terraform-ami"
     component   = "shipping"
     APP_VERSION = var.APP_VERSION
