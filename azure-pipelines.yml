@@ -17,7 +17,7 @@ variables:
   COMPONENT: shipping
     
 stages: 
-- template: "codecheck.yml@azureCI"
-- template: "codeTest.yml@azureCI"
-- template: "java-az.yml@azureCI"
-  
+#- template: "codecheck.yml@azureCI"
+#- template: "codeTest.yml@azureCI"
+#- template: "java-az.yml@azureCI"
+- template: "docker.yml@azureCI"  
